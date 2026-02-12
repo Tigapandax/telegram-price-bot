@@ -4,7 +4,8 @@ import re
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 
-TOKEN = "8290397833:AAHeJJrFHZy78do2RhpLYkc17uVK3Ssq35w"
+import os
+TOKEN = os.getenv("TOKEN")
 
 alerts = []
 
